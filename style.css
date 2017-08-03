@@ -11,12 +11,14 @@ body {
   justify-content: center;
   margin: 300px;
   border: solid 2px black;
+  height: 525px;
+  width: 455px;
 }
 
 button {
   flex-basis: 25%;
 }
 
-.inputArea {
- flex-basis: 75%;
+.display {
+  flex-basis: 75%;
 }
