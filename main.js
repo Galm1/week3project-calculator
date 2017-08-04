@@ -72,3 +72,20 @@ document.getElementById("decimal").addEventListener("click", function(event) {
   let input = `.`;
   document.querySelector('.display').innerHTML += input;
 });
+
+document.getElementById("clear").addEventListener("click", function(event) {
+  document.querySelector('.display').innerHTML = ``;
+});
+
+document.getElementById("equal").addEventListener("click", function(event) {
+
+  let string = document.querySelector('.display').innerHTML;
+  let answer = eval(string);
+  let output = `${answer}`;
+  document.querySelector('.display').innerHTML = output;
+});
+
+
+// let string = document.querySelector('.display').innerHTML;
+// let answer = eval(string);
+// console.log(answer);
